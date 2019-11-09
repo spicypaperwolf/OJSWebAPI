@@ -173,6 +173,7 @@
       <DependentUpon>OJS.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\AdminLoginController.cs" />
+    <Compile Include="Controllers\AdminUserController.cs" />
     <Compile Include="Controllers\UserRegController.cs" />
     <Compile Include="DimInfoMst.cs">
       <DependentUpon>OJS.tt</DependentUpon>
@@ -216,6 +217,8 @@
       <DependentUpon>OJS.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="service\Impl\UserService.cs" />
+    <Compile Include="service\IUserService.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="StoneInfoMst.cs">
       <DependentUpon>OJS.tt</DependentUpon>
