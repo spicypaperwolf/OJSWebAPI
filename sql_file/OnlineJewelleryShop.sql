@@ -26,7 +26,8 @@ CREATE TABLE UserRegMst(
 	mobNo TEXT NOT NULL,
 	emailId TEXT NOT NULL,
 	dob NVARCHAR(50) NOT NULL,
-	cdate TIMESTAMP NOT NULL,
+	cdate DATETIME NOT NULL
+			DEFAULT CURRENT_TIMESTAMP,
 	[password] VARCHAR(50) NOT NULL
 )
 GO
@@ -43,7 +44,8 @@ CREATE TABLE GuestMst
 	mobNo TEXT NOT NULL,
 	emailId TEXT NOT NULL,
 	dob NVARCHAR(50) NOT NULL,
-	cdate TIMESTAMP NOT NULL
+	cdate DATETIME NOT NULL
+			DEFAULT CURRENT_TIMESTAMP
 )
 
 /*TABLE 4*/
@@ -164,7 +166,8 @@ CREATE TABLE InquiryMst(
 	mobNo TEXT NOT NULL,
 	emailId TEXT NOT NULL,
 	cmt VARCHAR(MAX) NOT NULL,
-	cdate TIMESTAMP NOT NULL,
+	cdate DATETIME NOT NULL
+			DEFAULT CURRENT_TIMESTAMP,
 	cardNo INT NOT NULL,
 	expdate VARCHAR(15) NOT NULL,
 	CVV_No INT NOT NULL
@@ -594,5 +597,77 @@ VALUES
     0, -- otherMaking - numeric(10, 2)
     12000000.00, -- totMaking - numeric(10, 2)
     72000000.00  -- MRP - numeric(10, 2)
+    )
+GO
+
+--INSERT CLONE DATA 4 UserRegMst
+INSERT INTO	dbo.UserRegMst
+(
+    userId,
+    userFname,
+    userLname,
+    address,
+    city,
+    state,
+    mobNo,
+    emailId,
+    dob,
+    password
+)
+VALUES
+(   N'U101', -- userId - nchar(10)
+    'Kiel',  -- userFname - text
+    'Huynh',  -- userLname - text
+    '29, Ngo Thoi Nhiem, Q1',  -- address - varchar(max)
+    N'TP. HCM', -- city - nvarchar(50)
+    N'TP. HCM', -- state - nvarchar(50)
+    '0908292881',  -- mobNo - text
+    'kiel@gmail.com',  -- emailId - text
+    N'12/09/1993', -- dob - nvarchar(50)
+    '12345'   -- password - varchar(50)
+    ),
+(   N'U102', -- userId - nchar(10)
+    'Alex',  -- userFname - text
+    'Huynh',  -- userLname - text
+    '29, Tran Hung Dao, Q1',  -- address - varchar(max)
+    N'TP. HCM', -- city - nvarchar(50)
+    N'TP. HCM', -- state - nvarchar(50)
+    '0908222881',  -- mobNo - text
+    'alex@gmail.com',  -- emailId - text
+    N'09/09/1993', -- dob - nvarchar(50)
+    '12345'   -- password - varchar(50)
+    ),
+(   N'U103', -- userId - nchar(10)
+    'Popo',  -- userFname - text
+    'Nguyen',  -- userLname - text
+    '13, Nguyen Trai, Q1',  -- address - varchar(max)
+    N'TP. HCM', -- city - nvarchar(50)
+    N'TP. HCM', -- state - nvarchar(50)
+    '0908292381',  -- mobNo - text
+    'popo12@gmail.com',  -- emailId - text
+    N'02/12/1993', -- dob - nvarchar(50)
+    '12345'   -- password - varchar(50)
+    ),
+(   N'U104', -- userId - nchar(10)
+    'Quorra',  -- userFname - text
+    'Vu',  -- userLname - text
+    '1, Tran Cao Van, Q1',  -- address - varchar(max)
+    N'TP. HCM', -- city - nvarchar(50)
+    N'TP. HCM', -- state - nvarchar(50)
+    '0938292881',  -- mobNo - text
+    'quorra292@gmail.com',  -- emailId - text
+    N'05/07/1992', -- dob - nvarchar(50)
+    '12345'   -- password - varchar(50)
+    ),
+(   N'U105', -- userId - nchar(10)
+    'Rin',  -- userFname - text
+    'Tran',  -- userLname - text
+    '19, Nguyen Bieu, Q5',  -- address - varchar(max)
+    N'TP. HCM', -- city - nvarchar(50)
+    N'TP. HCM', -- state - nvarchar(50)
+    '0908982881',  -- mobNo - text
+    'rin291@gmail.com',  -- emailId - text
+    N'07/02/1992', -- dob - nvarchar(50)
+    '12345'   -- password - varchar(50)
     )
 GO
