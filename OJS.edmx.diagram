@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="81c221e3cf6c48e5b12f8a09d86cf8ff" Name="Diagram1" ZoomLevel="91">
+        <EntityTypeShape EntityType="OnlineJewelryShopDBModel.AdminLoginMst" Width="1.5" PointX="8.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJewelryShopDBModel.BrandMst" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJewelryShopDBModel.CartList" Width="1.5" PointX="8.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJewelryShopDBModel.CategoryMst" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJewelryShopDBModel.CertificateMst" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJewelryShopDBModel.CommentMst" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJewelryShopDBModel.ContactMst" Width="1.5" PointX="10.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJewelryShopDBModel.DimInfoMst" Width="1.5" PointX="0.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJewelryShopDBModel.GoldInfoMst" Width="1.5" PointX="0.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJewelryShopDBModel.GuestMst" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJewelryShopDBModel.InquiryMst" Width="1.5" PointX="10.5" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJewelryShopDBModel.ItemMst" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJewelryShopDBModel.NewsletterMst" Width="1.5" PointX="10.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJewelryShopDBModel.ProductMst" Width="1.5" PointX="0.75" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJewelryShopDBModel.StoneInfoMst" Width="1.5" PointX="0.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJewelryShopDBModel.TransactionMst" Width="1.5" PointX="8.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJewelryShopDBModel.UserRegMst" Width="1.5" PointX="3" PointY="11.5" IsExpanded="true" />
+        <AssociationConnector Association="OnlineJewelryShopDBModel.FK__ItemMst__brandId__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJewelryShopDBModel.FK__CartList__guestI__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJewelryShopDBModel.FK__CartList__userId__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJewelryShopDBModel.FK__InquiryMs__cartI__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJewelryShopDBModel.FK__ItemMst__catId__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJewelryShopDBModel.FK__ItemMst__certifi__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJewelryShopDBModel.FK__CommentMs__itemC__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJewelryShopDBModel.FK__CommentMs__userI__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJewelryShopDBModel.FK__ItemMst__dimId__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJewelryShopDBModel.FK__ItemMst__goldId__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJewelryShopDBModel.FK__Transacti__guest__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJewelryShopDBModel.FK__ItemMst__prodId__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJewelryShopDBModel.FK__ItemMst__stoneId__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJewelryShopDBModel.FK__Transacti__itemC__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJewelryShopDBModel.FK__Transacti__userI__49C3F6B7" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
