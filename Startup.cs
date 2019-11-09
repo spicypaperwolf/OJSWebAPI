@@ -23,7 +23,7 @@ namespace OnlineJewelryShopping
             {
                 AllowInsecureHttp = true,
                 //The Path For generating the Toekn
-                TokenEndpointPath = new PathString("/token"),
+                TokenEndpointPath = new PathString("/api/token"),
                 //Setting the Token Expired Time (24 hours)
                 AccessTokenExpireTimeSpan = TimeSpan.FromDays(1),
                 //MyAuthorizationServerProvider class will validate the user credentials
