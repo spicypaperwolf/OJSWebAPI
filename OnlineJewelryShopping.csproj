@@ -216,6 +216,13 @@
       <DependentUpon>OJS.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="service\IItemService.cs" />
+    <Compile Include="service\Impl\ItemService.cs" />
+    <Compile Include="service\Impl\UserService.cs" />
+    <Compile Include="service\IUserService.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Startup.cs" />
     <Compile Include="StoneInfoMst.cs">
       <DependentUpon>OJS.tt</DependentUpon>
