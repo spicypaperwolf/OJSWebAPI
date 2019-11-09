@@ -173,6 +173,7 @@
       <DependentUpon>OJS.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\AdminLoginController.cs" />
+    <Compile Include="Controllers\AdminUserController.cs" />
     <Compile Include="Controllers\UserRegController.cs" />
     <Compile Include="DimInfoMst.cs">
       <DependentUpon>OJS.tt</DependentUpon>
@@ -216,13 +217,10 @@
       <DependentUpon>OJS.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< Updated upstream
-=======
     <Compile Include="service\IItemService.cs" />
     <Compile Include="service\Impl\ItemService.cs" />
     <Compile Include="service\Impl\UserService.cs" />
     <Compile Include="service\IUserService.cs" />
->>>>>>> Stashed changes
     <Compile Include="Startup.cs" />
     <Compile Include="StoneInfoMst.cs">
       <DependentUpon>OJS.tt</DependentUpon>
@@ -252,6 +250,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="service\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
