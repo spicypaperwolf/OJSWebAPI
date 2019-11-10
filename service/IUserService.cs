@@ -8,5 +8,7 @@ namespace OnlineJewelryShopping.service
     public interface IUserService
     {
         List<UserRegMst> FindAll();
+        string updateUser(UserRegMst userRegMst);
+        string addUser(UserRegMst userRegMst);
     }
 }

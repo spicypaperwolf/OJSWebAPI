@@ -1,20 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
 using System.Security.Claims;
+using System.Web.Http;
 
 namespace OnlineJewelryShopping.Controllers
 {
     public class AdminLoginController : ApiController
     {
+        OnlineJewelryShopDBEntities context = new OnlineJewelryShopDBEntities();
         [AllowAnonymous]
         [Route("api/get/all")]
-        public IHttpActionResult Get()
+        public IEnumerable<ItemMst> GetUserReg()
         {
-            return Ok("Server time is " + DateTime.Now.ToString());
+            return context.ItemMsts.ToList();
         }
 
         //This resource is For admin
